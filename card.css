@@ -1,0 +1,83 @@
+.profile-card {
+
+                  width: auto;
+                  border: none;
+                  border-radius: 15px;
+                  padding: 8px;
+                  background-color: #fff;
+                  position: relative;
+                  height: 370px;
+}
+
+.profile-card .user-upper-image {
+
+                  height: 100px;
+
+}
+
+.profile-card .user-upper-image img {
+
+                  width: 100%;
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+
+}
+
+.user-profile-images {
+                  position: relative;
+}
+
+.user-profile-images .profile img {
+
+
+                  height: 80px;
+                  width: 80px;
+                  margin-top: 2px;
+
+
+}
+
+.user-profile-images .profile {
+
+                  position: absolute;
+                  top: -50px;
+                  left: 38%;
+                  height: 90px;
+                  width: 90px;
+                  border: 3px solid #fff;
+
+                  border-radius: 50%;
+
+}
+
+.follow-button .follow {
+
+                  border-radius: 15px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  height: 35px;
+}
+
+.follow-button .stats span {
+
+                  font-size: 29px;
+                  font-family: "Nunito", sans-serif;
+}
+
+.follow-button .stats h4 {
+
+
+                  font-family: "Nunito", sans-serif;
+}
+
+.follow-button span {
+
+
+                  font-family: "Nunito", sans-serif;
+}
+
+.follow-button h4 {
+
+
+                  font-family: "Nunito", sans-serif;
+}
