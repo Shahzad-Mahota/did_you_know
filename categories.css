@@ -42,7 +42,7 @@ body {
 }
 
 .feed-layout {
-    background-color: #f2f5f5;
+    /* background-color: #f2f5f5; */
     overflow: hidden;
     position: relative;
 }
@@ -79,7 +79,7 @@ body {
     position: absolute;
     -webkit-transform: skewY(3deg);
     -ms-transform: skewY(3deg);
-    transform: skewY(3deg);
+    transform: skewY(0deg);
     width: 100vw;
 }
 
@@ -160,9 +160,7 @@ body {
     color: #5f7a7b;
 }
 
-.wds-button:not(.wds-is-text) {
-    border-color: #00cdd0;
-}
+
 
 a.wds-button,
 button.wds-button {
@@ -252,8 +250,8 @@ button.wds-button {
 }
 
 .global-registration-buttons.topics-buttons {
-    top: 30px;
-    right: 0;
+    top: -15px;
+    right: 0px;
     --wds-primary-button-background-color: #520044;
     --wds-primary-button-background-color--hover: #b80099;
     --wds-primary-button-label-color: #fff;
@@ -263,14 +261,15 @@ button.wds-button {
 
 .global-registration-buttons {
     position: absolute;
-    top: 12px;
-    right: 47px;
+    top: -15px;
+    right: 0px;
     z-index: 200;
     --wds-primary-button-background-color: #ffc500;
     --wds-primary-button-background-color--hover: #ffd64d;
     --wds-primary-button-label-color: #0e191a;
     --wds-secondary-button-label-color: #f5f3f5;
     --wds-secondary-button-label-color--hover: #ded7de;
+    font-family: Rubik, Helvetica, Arial, sans-serif;
 }
 
 .wds-button .wds-icon:not(:only-child):first-child {
@@ -1016,6 +1015,7 @@ svg:not(:root) {
         color: white;
         font-family: "Libre Baskerville", serif;
     }
+
     .dotted-background {
         height: 266px;
         left: 0;
@@ -1028,6 +1028,7 @@ svg:not(:root) {
         transform: skewY(0deg);
     }
 }
+
 @media (max-width: 254px) {
     .cate-banner-title h1 {
         font-size: 1.6rem;
@@ -1048,6 +1049,7 @@ svg:not(:root) {
         color: white;
         font-family: "Libre Baskerville", serif;
     }
+
     .dotted-background {
         height: 310px;
         left: 0;
@@ -1189,6 +1191,10 @@ svg:not(:root) {
         color: white;
         font-family: "Libre Baskerville", serif;
     }
+
+    .global-registration-buttons {
+        display: none;
+    }
 }
 
 
@@ -1220,8 +1226,4 @@ svg:not(:root) {
         color: white;
         font-family: "Libre Baskerville", serif;
     }
-}
-
-@media (min-width: 1201px) {
-    /* اسکرین کی چوڑائی 1201px سے بڑی ہو تو یہ سٹائلز استعمال ہوں گے */
 }

@@ -11,7 +11,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+<!-- Bootstrap Icons -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+rel="stylesheet"
+/>
     <!-- Link style -->
     <link href="style.css" rel="stylesheet" />
     <link href="categories.css" rel="stylesheet" />
@@ -179,14 +183,52 @@
       <button class="mobile_menubtn" id="mobilemenu_btn" onclick="showNav()">
         <iconify-icon icon="heroicons-outline:menu-alt-2"></iconify-icon>
       </button>
-      <button
-        class="mobile_user_btn"
-        data-bs-toggle="modal"
-        data-bs-target="#loginModal"
-      >
-        <iconify-icon icon="bx:user-circle"></iconify-icon>
-      </button>
+
+      <div class="d-flex align-items-center ms-auto">
+        <button
+          class="mobile_user_btn mx-2"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
+          <iconify-icon icon="bx:user-circle"></iconify-icon>
+        </button>
+
+        <div class="dropdown mx-2">
+          
+          <button
+
+            class="btn wds-button dropdown-toggle"
+            type="button"
+            id="languageDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          
+            <i class="bi bi-globe"></i>
+            
+          </button>
+          
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item" href="#" data-language="urdu">
+                <i class="bi bi-file-earmark-text"></i> Urdu
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-language="english">
+                <i class="bi bi-file-earmark-text"></i> English
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" data-language="hindi">
+                <i class="bi bi-file-earmark-text"></i> Hindi
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
     <section>
       <div class="feed-layout">
         <div class="dotted-background__wrapper">
@@ -267,625 +309,144 @@
         </div>
 
         <div class="feed-layout__wrapper is-topic">
-          <div class="feed-layout__container">
-            <div class="quizerland-home-categories ms-4">
-              <div class="container-fluid">
-                <div class="row categories-row">
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+          <div class="quizerland-home-categories">
+            <div class="container-fluid">
+              <div class="categories-row">
+                <div class="row m-auto">
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
-                  </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
-                  </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
-                  </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
-                  </div>
-                  <div class="col-md-1-5 col-lg-1-5 col-4 card category-list">
-                    <a href="quizerland.html">
-                      <img
-                        src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
-                        alt=""
-                      />
-                      <h6 class="text-center mt-2">Science</h6>
-                    </a>
+                  <div class="col-3 col-sm-3 col-md-2 col-lg-1 px-1 mb-2">
+                    <div class="card category-list">
+                      <a href="quizerland.html">
+                        <img
+                          src="https://img.freepik.com/premium-photo/floating-cyberpunk-environment-with-pc-video-games_863013-50214.jpg"
+                          alt=""
+                        />
+                        <h6 class="text-center mt-2">Science</h6>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <section class="quizer-land-home-hero-section mt-4 wrapper">
-                <div class="container">
-                  <div class="row" data-masonry='{"percentPosition": true }'>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="background-color: #cac8cf"
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://i0.wp.com/apeejay.news/wp-content/uploads/2023/11/251123-sneeze-feature.jpg?fit=569%2C509&ssl=1"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span style="text-decoration: none !important"
-                                  >When you sneeze, your heart momentarily
-                                  stops.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="background-color: #5a3525"
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://www.allthingshealth.com/en-us/_next/image/?url=https%3A%2F%2Fallthingshealth.b-cdn.net%2Fen-us%2Fwp-content%2Fuploads%2Fsites%2F3%2F2022%2F01%2Fmedium-shot-woman-sticking-out-tongue.jpg&w=1920&q=75"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span
-                                  >Every person's tongue print is unique, just
-                                  like fingerprints.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="
-                              background: linear-gradient(
-                                90deg,
-                                #c04848 3.76%,
-                                #480048 100%
-                              );
-                            "
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://www.icr.org/i/Main%20Stage%20-%201400x1050/olfactory-smell-1400x1050"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span
-                                  >The human nose can detect over 1 trillion
-                                  different scents.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="
-                              background: linear-gradient(
-                                85deg,
-                                rgba(63, 10, 30, 1) 12%,
-                                rgba(67, 169, 194, 1) 44%,
-                                rgba(255, 220, 172, 1) 22%,
-
-                                rgba(243, 30, 129, 1) 64%,
-
-                                rgba(219, 117, 39, 1) 83%
-                              );
-                            "
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://img.freepik.com/premium-photo/iconic-symbol-light-bulb-glowing-with-brilliance-human-brain_780593-17321.jpg"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span
-                                  >The human brain generates about 20 watts of
-                                  power.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href=""
-                            style="background-color: #cac8cf"
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://i0.wp.com/apeejay.news/wp-content/uploads/2023/11/251123-sneeze-feature.jpg?fit=569%2C509&ssl=1"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div
-                                class="block__title"
-                                style="text-decoration: none"
-                              >
-                                <span
-                                  >When you sneeze, your heart momentarily
-                                  stops.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="
-                              background: linear-gradient(
-                                85deg,
-                                rgba(251, 208, 182, 1) 17%,
-                                rgba(85, 44, 27, 1) 29%,
-
-                                rgba(255, 192, 193, 1) 51%,
-                                rgba(190, 192, 196, 1) 77%
-                              );
-                            "
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://www.allthingshealth.com/en-us/_next/image/?url=https%3A%2F%2Fallthingshealth.b-cdn.net%2Fen-us%2Fwp-content%2Fuploads%2Fsites%2F3%2F2022%2F01%2Fmedium-shot-woman-sticking-out-tongue.jpg&w=1920&q=75"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span
-                                  >Every person's tongue print is unique, just
-                                  like fingerprints.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="
-                              background: linear-gradient(
-                                90deg,
-                                #c04848 3.76%,
-                                #480048 100%
-                              );
-                            "
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://www.icr.org/i/Main%20Stage%20-%201400x1050/olfactory-smell-1400x1050"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span
-                                  >The human nose can detect over 1 trillion
-                                  different scents.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-                      <div
-                        id="spotlight-home-promo_1-0"
-                        class="comp spotlight-home-promo link-list list-container mntl-block"
-                      >
-                        <div
-                          id="list-item_5-0"
-                          class="comp list-item list-container-item mntl-block"
-                        >
-                          <a
-                            id="block--special_1-0"
-                            class="comp block--special block"
-                            rel=""
-                            data-doc-id=""
-                            href="quizerland.html"
-                            style="
-                              background: linear-gradient(
-                                85deg,
-                                rgba(63, 10, 30, 1) 12%,
-                                rgba(67, 169, 194, 1) 44%,
-                                rgba(255, 220, 172, 1) 22%,
-
-                                rgba(243, 30, 129, 1) 64%,
-
-                                rgba(219, 117, 39, 1) 83%
-                              );
-                            "
-                          >
-                            <div class="block__media">
-                              <div
-                                class="img-placeholder"
-                                style="padding-bottom: 83.3%"
-                              >
-                                <img
-                                  src="https://img.freepik.com/premium-photo/iconic-symbol-light-bulb-glowing-with-brilliance-human-brain_780593-17321.jpg"
-                                  width="600"
-                                  height="500"
-                                  alt="Black women menopause health divide"
-                                  class="universal-image__image"
-                                  data-expand="300"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="block__content"
-                              data-kicker="Did you know?"
-                            >
-                              <div class="block__title">
-                                <span
-                                  >The human brain generates about 20 watts of
-                                  power.</span
-                                >
-                              </div>
-                              <span
-                                id="block--special__button_1-0"
-                                class="comp block--special__button mntl-text-block"
-                                >Explore More</span
-                              >
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
             </div>
 
             <!-- @@@@@@@@@@@@@ card section start here @@@@@@@@@@@@@@@@  -->
@@ -1107,6 +668,422 @@
         </div>
       </div>
     </section>
+    <section class="quizer-land-home-hero-section mt-4 wrapper">
+      <div class="container">
+        <div class="row" data-masonry='{"percentPosition": true }'>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="background-color: #cac8cf"
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://i0.wp.com/apeejay.news/wp-content/uploads/2023/11/251123-sneeze-feature.jpg?fit=569%2C509&ssl=1"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span style="text-decoration: none !important"
+                        >When you sneeze, your heart momentarily stops.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="background-color: #5a3525"
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://www.allthingshealth.com/en-us/_next/image/?url=https%3A%2F%2Fallthingshealth.b-cdn.net%2Fen-us%2Fwp-content%2Fuploads%2Fsites%2F3%2F2022%2F01%2Fmedium-shot-woman-sticking-out-tongue.jpg&w=1920&q=75"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span
+                        >Every person's tongue print is unique, just like
+                        fingerprints.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #c04848 3.76%,
+                      #480048 100%
+                    );
+                  "
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://www.icr.org/i/Main%20Stage%20-%201400x1050/olfactory-smell-1400x1050"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span
+                        >The human nose can detect over 1 trillion different
+                        scents.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="
+                    background: linear-gradient(
+                      85deg,
+                      rgba(63, 10, 30, 1) 12%,
+                      rgba(67, 169, 194, 1) 44%,
+                      rgba(255, 220, 172, 1) 22%,
+
+                      rgba(243, 30, 129, 1) 64%,
+
+                      rgba(219, 117, 39, 1) 83%
+                    );
+                  "
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://img.freepik.com/premium-photo/iconic-symbol-light-bulb-glowing-with-brilliance-human-brain_780593-17321.jpg"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span
+                        >The human brain generates about 20 watts of
+                        power.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href=""
+                  style="background-color: #cac8cf"
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://i0.wp.com/apeejay.news/wp-content/uploads/2023/11/251123-sneeze-feature.jpg?fit=569%2C509&ssl=1"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title" style="text-decoration: none">
+                      <span
+                        >When you sneeze, your heart momentarily stops.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="
+                    background: linear-gradient(
+                      85deg,
+                      rgba(251, 208, 182, 1) 17%,
+                      rgba(85, 44, 27, 1) 29%,
+
+                      rgba(255, 192, 193, 1) 51%,
+                      rgba(190, 192, 196, 1) 77%
+                    );
+                  "
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://www.allthingshealth.com/en-us/_next/image/?url=https%3A%2F%2Fallthingshealth.b-cdn.net%2Fen-us%2Fwp-content%2Fuploads%2Fsites%2F3%2F2022%2F01%2Fmedium-shot-woman-sticking-out-tongue.jpg&w=1920&q=75"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span
+                        >Every person's tongue print is unique, just like
+                        fingerprints.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #c04848 3.76%,
+                      #480048 100%
+                    );
+                  "
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://www.icr.org/i/Main%20Stage%20-%201400x1050/olfactory-smell-1400x1050"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span
+                        >The human nose can detect over 1 trillion different
+                        scents.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div
+              id="spotlight-home-promo_1-0"
+              class="comp spotlight-home-promo link-list list-container mntl-block"
+            >
+              <div
+                id="list-item_5-0"
+                class="comp list-item list-container-item mntl-block"
+              >
+                <a
+                  id="block--special_1-0"
+                  class="comp block--special block"
+                  rel=""
+                  data-doc-id=""
+                  href="quizerland.html"
+                  style="
+                    background: linear-gradient(
+                      85deg,
+                      rgba(63, 10, 30, 1) 12%,
+                      rgba(67, 169, 194, 1) 44%,
+                      rgba(255, 220, 172, 1) 22%,
+
+                      rgba(243, 30, 129, 1) 64%,
+
+                      rgba(219, 117, 39, 1) 83%
+                    );
+                  "
+                >
+                  <div class="block__media">
+                    <div class="img-placeholder" style="padding-bottom: 83.3%">
+                      <img
+                        src="https://img.freepik.com/premium-photo/iconic-symbol-light-bulb-glowing-with-brilliance-human-brain_780593-17321.jpg"
+                        width="600"
+                        height="500"
+                        alt="Black women menopause health divide"
+                        class="universal-image__image"
+                        data-expand="300"
+                      />
+                    </div>
+                  </div>
+                  <div class="block__content" data-kicker="Did you know?">
+                    <div class="block__title">
+                      <span
+                        >The human brain generates about 20 watts of
+                        power.</span
+                      >
+                    </div>
+                    <span
+                      id="block--special__button_1-0"
+                      class="comp block--special__button mntl-text-block"
+                      >Explore More</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="latest-trend-section">
       <div class="newsletter">
         <div class="newsletter__info">
@@ -1725,7 +1702,12 @@
         },
       });
     </script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
     <script>
       $("#mobilemenu_btn").click(function () {
         $("#sideBar_id").css({

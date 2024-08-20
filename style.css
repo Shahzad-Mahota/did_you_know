@@ -3,11 +3,11 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.categories-row .col-md-1-5 {
+/* .categories-row .col-md-1-5 {
   flex: 0 0 12.5%;
-  /* 1.5/12 * 100% = 12.5% */
+
   max-width: 12.5%;
-}
+} */
 
 
 .categories-row {
@@ -733,11 +733,11 @@ justify-content:center;
 }
 
 .wds-button:not(.wds-is-text) {
-  border-color: #00cdd0;
+  border: 0.1px solid rgb(208 208 208);
 }
 
 .wds-button:not(.wds-is-text):not(.wds-is-secondary) {
-  background-color: #00cdd0;
+  background-color: transparent;
 }
 
 .newsletter__submit {
@@ -938,8 +938,8 @@ justify-content:center;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
   padding: 12px;
   background-color: white;
-  width: 126px !important;
-  margin: 9px !important;
+  /* width: 100px !important; */
+  /* margin: 7px !important; */
   height: auto !important;
 }
 
@@ -982,8 +982,8 @@ justify-content:center;
 /* media quries  */
 /* Medium screens (tablets, 768px and up) */
 @media (max-width: 1199px) {
-  body {
-    font-size: 16px;
+  .categories-row {
+    margin-left: 0px;
   }
 }
 
@@ -991,6 +991,18 @@ justify-content:center;
 @media (max-width: 768px) {
   .quizerland-home-categories {
     margin-top: 170px;
+  }
+
+  .categories-row {
+    margin-left: 0px;
+  }
+
+  .quizer-land-home-hero-section {
+    margin-left: 0px;
+  }
+
+  .global-registration-buttons {
+    display: none;
   }
 }
 
@@ -1000,46 +1012,35 @@ justify-content:center;
     margin-top: 212px;
   }
 
+  .quizer-land-home-hero-section {
+    margin-left: 0px;
+  }
 }
 
 /* Extra small screens (very small devices) */
-@media (max-width: 375px) {
-  .quizerland-home-categories .category-list {
-    border: 0;
-    flex: 0 0 auto;
-    margin-left: 0px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
-    padding: 6px;
-    background-color: white;
-    width: 72px !important;
-    margin: 9px !important;
-    height: auto !important;
+
+
+@media (max-width: 448px) {
+  categories-row {
+    margin-left: -23px;
   }
 
-  .categories-row .col-md-1-5 {
-    flex: 0 0 12.5%;
-    max-width: 58.5%;
+  .quizer-land-home-hero-section {
+    margin-left: 0px;
   }
 }
 
 @media (max-width: 479px) {
-  .quizerland-home-categories .category-list {
-    border: 0;
-    flex: 0 0 auto;
+  .quizer-land-home-hero-section {
     margin-left: 0px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
-    padding: 6px;
-    background-color: white;
-    width: 72px !important;
-    margin: 9px !important;
-    height: auto !important;
   }
 
-  .categories-row .col-md-1-5 {
-    flex: -2 0 12.5%;
-    max-width: 58.5%;
+  .categories-row {
+    margin-left: 0px;
+  }
+
+  .global-registration-buttons {
+    display: none;
   }
 }
 
@@ -1055,4 +1056,8 @@ justify-content:center;
   --wds-primary-button-label-color: #0e191a;
   --wds-secondary-button-label-color: #f5f3f5;
   --wds-secondary-button-label-color--hover: #ded7de;
+}
+
+.mobile_menu .dropdown {
+  margin-bottom: 3px;
 }
